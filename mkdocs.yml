@@ -1,0 +1,8 @@
+site_name: "My Project Docs"
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Demo – Liberty Environment: liberty-demo/index.md
+  - Demo – WCA Environment:     wca4j-demo/index.md
