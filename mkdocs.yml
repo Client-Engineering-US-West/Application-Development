@@ -1,65 +1,23 @@
-site_name: "My Project Docs"
-site_description: "High-level documentation for project demos"
-site_author: "Alejandro Palumbo"
-repo_url: https://github.com/Client-Engineering-US-West/Application-Development.git   # ← replace with your repo URL
-repo_name: GitHub
+site_name: IBM App Modernization POC
+site_author: Alejandro Palumbo
+repo_url: https://github.com/Client-Engineering-US-West/Application-Development.git
+
+theme:
+  name: material
 
 nav:
   - Home: index.md
-  - Demo:
+  - Workstation Setup: workstation-setup.md
+  - Demo Environments:
       - Liberty Environment: liberty-demo/index.md
       - WCA Environment: wca4j-demo/index.md
-  - App Development & Modernization with AMA/TA & WCA:          # ← parent label (clickable & collapsible)
-      - Lab 1 - Install AMA/TA:    labs/lab1-installmd
-      - Lab 2 - Scan Applications:  labs/lab2-scan.md
-      - Lab 3 - Explain:    labs/lab3-explain.md
-      - Lab 4 - Modernize:  labs/lab4-modernize.md
-      - Lab 5 - Upgrade Java: labs/lab5-upgrade-java.md
-      - Lab 6 - Unit Test:  labs/lab6-unit-test.md
-      - Lab 7 - Containerize: labs/lab7-containers.md
-      - Lab 8 - Deploy to OCP: labs/lab8-deploy.md
-theme:
-  name: material
-  language: en
-  logo: assets/images/logo.png      # ← optional, point to your logo
-  favicon: assets/images/favicon.ico  # ← optional, your favicon
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: teal
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: teal
-      toggle:
-        icon: material/lightbulb
-        name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  features:
-    - navigation.top         # show top-level nav on every page
-    - navigation.tabs        # render grouped nav as clickable tabs
-    - navigation.instant     # prefetch pages for instant loading
-    - content.code.copy      # add a “copy” button to all code blocks
-    - content.tabs.link      # make tab labels linkable
-    - content.footnotes      # nicer footnote rendering
-  icon:
-    repo: fontawesome/brands/github
-
-markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - toc:
-      permalink: true
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - pymdownx.details
-  - pymdownx.emoji
-
-plugins:
-  - search
+  # Uncomment below when lab files exist:
+  # - App Development & Modernization with AMA/TA & WCA:
+  #     - Lab 1 - Install AMA/TA: labs/lab1-installmd
+  #     - Lab 2 - Scan Applications: labs/lab2-scan.md
+  #     - Lab 3 - Explain: labs/lab3-explain.md
+  #     - Lab 4 - Modernize: labs/lab4-modernize.md
+  #     - Lab 5 - Upgrade Java: labs/lab5-upgrade-java.md
+  #     - Lab 6 - Unit Test: labs/lab6-unit-test.md
+  #     - Lab 7 - Containerize: labs/lab7-containers.md
+  #     - Lab 8 - Deploy to OCP: labs/lab8-deploy.md
